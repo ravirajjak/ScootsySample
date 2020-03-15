@@ -45,6 +45,7 @@ class GridCategoryAdapter(val context: Context) :
 
             holder.binding.layItemCardviewLinParent.layoutParams = rlp
             Log.d("STRING_URL", mUrl);
+            holder.binding.layItemCardviewTvTitle.text = mDataList.get(position).name
             Glide.with(context).load(mUrl).into(holder.binding.layItemCardviewImgDisplay)
         }
     }
